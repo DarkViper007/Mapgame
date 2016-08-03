@@ -18,7 +18,7 @@ $(document).ready(function(e) {
 
 
 
-			$(this).addClass('NotTurn'); 
+			$(this).addClass('NotTurn');
 
 
 			if(CurrentPlayer != 4){
