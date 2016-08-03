@@ -1,0 +1,104 @@
+.item {
+	border-radius: 50%;
+	border: 1px #000 solid;
+	padding: 30px;
+	display: inline-block;
+	max-width: 70px;
+	position: relative;
+	z-index: 2;
+}
+.container{
+	width: 735px;
+	margin: 0 auto;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+.container1 {
+	float: left;
+clear: both;
+width: 100%;
+}
+.container12 {
+float: right;
+max-width: 70px;
+margin-right: 5px;
+}
+.container21 {
+	width: 100%;
+    float: right;
+    clear: both;
+        margin-top: 5px;
+
+    padding-right: 8px;
+}
+
+.container21 .item {
+	float: right;
+	margin-right: 4px;
+}
+.container32 {
+	max-width: 70px;
+	    transform: rotatex(180deg);
+    /* padding-top: 20px; */
+    margin-top: 65px;
+
+}
+.container32 .player img{
+	    transform: rotatex(-180deg);
+}
+
+.player img{
+  width: 100%;
+
+}
+
+.player {
+position: absolute;
+max-width: 70px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+      -webkit-animation: balls 4s infinite;
+  animation: balls 2s infinite;
+
+}
+@-webkit-keyframes balls {
+  from{-webkit-transform: translateY(0);}
+  50%{-webkit-transform: translateY(-10px);}
+  to{-webkit-transform: translateY(0);}
+}
+
+
+
+.cub {
+    padding: 10px 25px;
+    border: 2px solid #000;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 45px;
+    cursor: pointer;
+}
+.PlayerName {
+position: absolute;
+top: 0;
+}
+
+body .play2 {
+  left: 84px;
+}
+
+body .play3 {
+  left: 168px;
+}
+
+body .play4 {
+  left: 252px;
+}
+
+.NotTurn {
+  background-color: ##673ab7;
+  opacity: 0.5;
+}
