@@ -1,18 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .item {
 	border-radius: 50%;
-	border: 1px #000 solid;
+	border: 1px #ac8858 solid;
+    background-color: #ac8858;
+    -webkit-box-shadow: 0px 0px 50px 0px #ac8858;
+    -moz-box-shadow: 0px 0px 50px 0px #ac8858;
+    box-shadow: 0px 0px 50px 0px #ac8858;
 	padding: 30px;
 	display: inline-block;
 	max-width: 70px;
 	position: relative;
 	z-index: 2;
+  box-sizing: border-box;
 }
 .container{
-	width: 735px;
+	width: 780px;
 	margin: 0 auto;
 	padding-top: 150px;
 	padding-bottom: 100px;
 	position: relative;
+    background: url('http://t06.deviantart.net/TG29H5Iy0o-hyS9oB7g1AC9U_ys=/300x200/filters:fixed_height(100,100):origin()/pre07/87cc/th/pre/i/2010/291/3/4/seamless_desert_sand_texture_by_hhh316-d311qn7.jpg');
+padding-left: 20px;
+padding-right:20px;
+-webkit-box-shadow: -4px 6px 61px 10px rgba(172,136,88,1);
+-moz-box-shadow: -4px 6px 61px 10px rgba(172,136,88,1);
+box-shadow: -4px 6px 61px 10px rgba(172,136,88,1);
 }
 
 .container1 {
@@ -76,29 +93,66 @@ max-width: 70px;
     padding: 10px 25px;
     border: 2px solid #000;
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: 30px;
+    left: 20px;
     font-size: 45px;
     cursor: pointer;
 }
 .PlayerName {
 position: absolute;
-top: 0;
+top: 10px;
 }
 
 body .play2 {
-  left: 84px;
+  left: 104px;
 }
 
 body .play3 {
-  left: 168px;
+  left: 188px;
 }
 
 body .play4 {
-  left: 252px;
+  left: 272px;
 }
 
 .NotTurn {
   background-color: ##673ab7;
   opacity: 0.5;
 }
+
+body {
+  background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_xKXyXJJ1-4xE1gt8fGNgU6ANzTuNIcTCEESIqfK7xYMovkNs');
+}
+
+
+.playcolor1 {
+  
+  background-color: #f44336;
+-webkit-box-shadow: 0px 0px 50px 0px #f44336;
+-moz-box-shadow: 0px 0px 50px 0px #f44336;
+box-shadow: 0px 0px 50px 0px #f44336;
+}
+
+.playcolor2 {
+  
+  background-color: #2196f3;
+-webkit-box-shadow: 0px 0px 50px 0px #2196f3;
+-moz-box-shadow: 0px 0px 50px 0px #2196f3;
+box-shadow: 0px 0px 50px 0px #2196f3;
+}
+
+.playcolor3 {
+  
+  background-color: #4caf50;
+-webkit-box-shadow: 0px 0px 50px 0px #4caf50;
+-moz-box-shadow: 0px 0px 50px 0px #4caf50;
+box-shadow: 0px 0px 50px 0px #4caf50;
+}
+.playcolor4 {
+  
+  background-color: #ffeb3b;
+ -webkit-box-shadow: 0px 0px 50px 0px #ffeb3b;
+-moz-box-shadow: 0px 0px 50px 0px #ffeb3b;
+box-shadow: 0px 0px 50px 0px #ffeb3b; 
+}
+
