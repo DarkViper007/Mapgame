@@ -8,6 +8,7 @@ define('BASE_DIR', __DIR__);
 
 //Core include
 include_once(BASE_DIR.'/core/trash.php');
+// include_once(BASE_DIR.'/core/database.php');
 
 // DEfines 2
 define('BASE_URL', url());

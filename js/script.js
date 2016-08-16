@@ -10,6 +10,7 @@ $(document).ready(function(e) {
 				$(this).animate({ top: '35px' },500).text(number);
 				$(this).animate({ top: '30px' },500);
 			var CurrentPlayer = $(this).attr('data-cub');
+			var	CurrentPlayerData = CurrentPlayer;
 			var CurrentPlayerConst = $(this).attr('data-cub');
 			var PlayerPlace = $(document).find('#player'+CurrentPlayer).parent().attr('data-place');
 			var ChangePlace = +PlayerPlace + +number;
@@ -40,7 +41,38 @@ $(document).ready(function(e) {
 					$(document).find('#part'+ChangePlace).append(PlayerObject);
 					$(document).find('#part'+ChangePlace).addClass('playcolor'+CurrentPlayerConst);
 			}
+			// console.log();
+			GetRandomEvent(CurrentPlayerData);
 
 		}
+
 		})
+
+function GetRandomEvent(CurrentPlayerData){
+	            $.ajax({
+                type: "POST",
+                url: "/core/database.php",
+                data:{
+                    coredata: CurrentPlayerData                 
+                },
+                success:function(json){
+                	var resultmessge = json.split('|');
+                	WriteResult(resultmessge);
+
+                }
+            })
+	
+}
+function WriteResult(resultmessge) {
+	console.log(resultmessge[0]);
+	console.log(resultmessge[1]);
+	console.log(resultmessge[2]);
+	console.log(resultmessge[3]);
+	console.log(resultmessge[4]);
+}
+
+
+
+
 	});
+
