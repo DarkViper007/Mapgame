@@ -64,6 +64,11 @@ function GetRandomEvent(CurrentPlayerData){
 	
 }
 function WriteResult(resultmessge) {
+	$('.blacksnow').addClass('displayitem');
+	        $(".event").animate({
+            top: '200px',
+            opacity: '1',
+        }, 'slow').addClass('displayitem');
 	console.log(resultmessge[0]);
 	console.log(resultmessge[1]);
 	console.log(resultmessge[2]);
