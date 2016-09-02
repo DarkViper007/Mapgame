@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Авг 16 2016 г., 19:21
+-- Время создания: Сен 02 2016 г., 18:01
 -- Версия сервера: 5.6.31-0ubuntu0.15.10.1
 -- Версия PHP: 5.6.11-1ubuntu3.4
 
@@ -40,8 +40,8 @@ CREATE TABLE `bad_events` (
 
 INSERT INTO `bad_events` (`event_id`, `event_text`, `event_art`, `gold_data`, `spirit_lvl`) VALUES
 (1, 'Что-то произошло.', '/Imagedata/BadEvents/Lizardmen.png', -100, -1),
-(3, 'Ну и типо ещё что-то.', '/Imagedata/BadEvents/goblin.jpg', -30, -2),
-(4, 'Типо все.', '/Imagedata/BadEvents/goblin.jpg', -301, -2);
+(3, 'Ну и типо ещё что-то.', '/Imagedata/BadEvents/goblin.png', -30, -2),
+(4, 'Типо все.', '/Imagedata/BadEvents/goblin.png', -301, -2);
 
 -- --------------------------------------------------------
 
@@ -62,9 +62,9 @@ CREATE TABLE `good_events` (
 --
 
 INSERT INTO `good_events` (`event_id`, `event_text`, `event_art`, `gold_data`, `spirit_lvl`) VALUES
-(1, 'Что-то произошло.', '/Imagedata/GoodEvents/goblin.jpg', 100, -1),
+(1, 'Что-то произошло.', '/Imagedata/GoodEvents/goblin.png', 100, -1),
 (2, 'И ещё что-то.', '/Imagedata/BadEvents/Lizardmen.png', 5, 1),
-(3, 'И ещё что-то вот.', '/Imagedata/BadEvents/Lizardmen.png', -10, 5);
+(3, 'И ещё что-то вот.r', '/Imagedata/BadEvents/Lizardmen.png', -10, 5);
 
 --
 -- Индексы сохранённых таблиц
@@ -95,7 +95,7 @@ ALTER TABLE `bad_events`
 -- AUTO_INCREMENT для таблицы `good_events`
 --
 ALTER TABLE `good_events`
-  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

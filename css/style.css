@@ -116,7 +116,7 @@ body .play4 {
 }
 
 .NotTurn {
-  background-color: ##673ab7;
+  background-color: #673ab7;
   opacity: 0.5;
 }
 
@@ -126,7 +126,7 @@ body {
 
 
 .playcolor1 {
-  
+  z-index: 20;
   background-color: #f44336;
 -webkit-box-shadow: 0px 0px 50px 0px #f44336;
 -moz-box-shadow: 0px 0px 50px 0px #f44336;
@@ -134,7 +134,7 @@ box-shadow: 0px 0px 50px 0px #f44336;
 }
 
 .playcolor2 {
-  
+  z-index: 20;
   background-color: #2196f3;
 -webkit-box-shadow: 0px 0px 50px 0px #2196f3;
 -moz-box-shadow: 0px 0px 50px 0px #2196f3;
@@ -142,14 +142,14 @@ box-shadow: 0px 0px 50px 0px #2196f3;
 }
 
 .playcolor3 {
-  
+  z-index: 20;
   background-color: #4caf50;
 -webkit-box-shadow: 0px 0px 50px 0px #4caf50;
 -moz-box-shadow: 0px 0px 50px 0px #4caf50;
 box-shadow: 0px 0px 50px 0px #4caf50;
 }
 .playcolor4 {
-  
+  z-index: 20;
   background-color: #ffeb3b;
  -webkit-box-shadow: 0px 0px 50px 0px #ffeb3b;
 -moz-box-shadow: 0px 0px 50px 0px #ffeb3b;
@@ -175,19 +175,21 @@ background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 23;
     top: 0;
     left: 0;
     /*opacity: 0.5;*/
     display: none;
 }
 .event {
+    border: 5px ridge #8e5d27;
     width: 30%;
     position: relative;
     /*height: 30%;*/
-    background-color: #c78841;
-    /* top: 20%; */
-    /* left: 20%; */
+    background: url('/Imagedata/map.jpg'); 
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px auto;
     z-index: 3;
     opacity: 0;
@@ -208,8 +210,14 @@ background-color: rgba(0, 0, 0, 0.5);
       min-height: 200px;
     margin: 0 auto;
     width: 40%;
+    max-width: 200px;
+}
+
+#image_event img{
+width: 100%;
 }
 #event_text{
+      color: #fbb464;
   padding: 10px;
 min-height: 40px;
     width: 80%;
@@ -219,6 +227,7 @@ min-height: 40px;
       display: inline-block;
     padding: 10px;
     margin-left: 10px;
+        color: #fbb464;
   }
 #ok_button {
   margin: 0 auto;
@@ -227,10 +236,11 @@ min-height: 40px;
   color: #fbb464;
   font-size: 26px;
   padding: 5px;
-  border: 2px solid #fbb464;
+  border: 2px ridge #fbb464;
   border-radius: 5px;
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   cursor: pointer;
+  outline:none;
 }
 #ok_button:hover {
    background-color:#986e3d;

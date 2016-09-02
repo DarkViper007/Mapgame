@@ -1,8 +1,8 @@
 $(document).ready(function(e) {
-		$(document).find('#part1').append('<div class="player" id="player1"><img src="http://icons.veryicon.com/png/Avatar/Face%20Avatars/Male%20Face%20O3.png" alt=""></div>').addClass('playcolor1');
-		$(document).find('#part11').append('<div class="player" id="player2"><img src="http://findicons.com/files/icons/1072/face_avatars/300/fh02.png" alt=""></div>').addClass('playcolor2');
-		$(document).find('#part21').append('<div class="player" id="player3"><img src="http://findicons.com/files/icons/206/looney_tunes/128/gossamer_angry.png" alt=""></div>').addClass('playcolor3');
-		$(document).find('#part31').append('<div class="player" id="player4"><img src="http://findicons.com/files/icons/1072/face_avatars/300/fd03.png" alt=""></div>').addClass('playcolor4');
+		$(document).find('#part1').append('<div class="player" id="player1"><img src="/Imagedata/playerdata/1.png" alt=""></div>').addClass('playcolor1');
+		$(document).find('#part11').append('<div class="player" id="player2"><img src="/Imagedata/playerdata/2.png" alt=""></div>').addClass('playcolor2');
+		$(document).find('#part21').append('<div class="player" id="player3"><img src="/Imagedata/playerdata/3.png" alt=""></div>').addClass('playcolor3');
+		$(document).find('#part31').append('<div class="player" id="player4"><img src="/Imagedata/playerdata/4.png" alt=""></div>').addClass('playcolor4');
 		
 	$('.cub').on('click', function(){
 		if(!$(this).hasClass('NotTurn')){
@@ -69,12 +69,25 @@ function WriteResult(resultmessge) {
             top: '200px',
             opacity: '1',
         }, 'slow').addClass('displayitem');
-	console.log(resultmessge[0]);
-	console.log(resultmessge[1]);
-	console.log(resultmessge[2]);
-	console.log(resultmessge[3]);
-	console.log(resultmessge[4]);
+	      $('#event_text').html(resultmessge[0]);
+	     $('#image_event').html("<img src='"+resultmessge[1]+"'>");
+	      $('#money').html("Money: "+resultmessge[2]);
+	      $('#luck').html("Luck: "+resultmessge[3]);
+
+	   var PlayerStat = $(document).find(".play"+resultmessge[4].slice(1));
+	   var MoneyData = PlayerStat.find('.money span').text();
+	   var LuckData = PlayerStat.find('.luck span').text();
+	   
+	   PlayerStat.find('.money span').html(parseInt(MoneyData)+parseInt(resultmessge[2]));
+	   PlayerStat.find('.luck span').html(parseInt(LuckData)+parseInt(resultmessge[3]));
 }
+
+$('.blacksnow').on('click', function(){
+	$(this).removeClass('displayitem');
+});
+$('#ok_button').on('click', function(){
+	$(this).removeClass('displayitem');
+});
 
 
 
