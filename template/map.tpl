@@ -9,16 +9,16 @@ $i = 1;
 <div class="Playerdata">
 <div class="data play1" ><div>Player 1</div>
 <div class="money"><p>Money: </p><span>0</span></div>
-<div class="luck"><p>Luck:</p><span>0</span></div></div>
+<div class="luck"><p>Karma:</p><span>0</span></div></div>
 <div class="data play2" ><div>Player 2</div>
 <div class="money"><p>Money: </p><span>0</span></div>
-<div class="luck"><p>Luck:</p><span>0</span></div></div>
+<div class="luck"><p>Karma:</p><span>0</span></div></div>
 <div class="data play3" ><div>Player 3</div>
 <div class="money"><p>Money: </p><span>0</span></div>
-<div class="luck"><p>Luck:</p><span>0</span></div></div>
+<div class="luck"><p>Karma:</p><span>0</span></div></div>
 <div class="data play4" ><div>Player 4</div>
 <div class="money"><p>Money: </p><span>0</span></div>
-<div class="luck"><p>Luck:</p><span>0</span></div></div>
+<div class="luck"><p>Karma:</p><span>0</span></div></div>
 </div>
 <?php
 while ($i <= 40) { 

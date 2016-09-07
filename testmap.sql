@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 02 2016 г., 18:01
+-- Время создания: Сен 07 2016 г., 16:38
 -- Версия сервера: 5.6.31-0ubuntu0.15.10.1
 -- Версия PHP: 5.6.11-1ubuntu3.4
 
@@ -39,9 +39,9 @@ CREATE TABLE `bad_events` (
 --
 
 INSERT INTO `bad_events` (`event_id`, `event_text`, `event_art`, `gold_data`, `spirit_lvl`) VALUES
-(1, 'Что-то произошло.', '/Imagedata/BadEvents/Lizardmen.png', -100, -1),
-(3, 'Ну и типо ещё что-то.', '/Imagedata/BadEvents/goblin.png', -30, -2),
-(4, 'Типо все.', '/Imagedata/BadEvents/goblin.png', -301, -2);
+(1, 'Что-то произошло.', '/Imagedata/BadEvents/Lizardmen.png', -100, 1),
+(3, 'Ну и типо ещё что-то.', '/Imagedata/BadEvents/goblin.png', -30, 3),
+(4, 'Типо все.', '/Imagedata/BadEvents/goblin.png', -70, 5);
 
 -- --------------------------------------------------------
 
@@ -63,8 +63,8 @@ CREATE TABLE `good_events` (
 
 INSERT INTO `good_events` (`event_id`, `event_text`, `event_art`, `gold_data`, `spirit_lvl`) VALUES
 (1, 'Что-то произошло.', '/Imagedata/GoodEvents/goblin.png', 100, -1),
-(2, 'И ещё что-то.', '/Imagedata/BadEvents/Lizardmen.png', 5, 1),
-(3, 'И ещё что-то вот.r', '/Imagedata/BadEvents/Lizardmen.png', -10, 5);
+(2, 'И ещё что-то.', '/Imagedata/BadEvents/Lizardmen.png', 5, -3),
+(3, 'И ещё что-то вот.r', '/Imagedata/BadEvents/Lizardmen.png', 10, -5);
 
 --
 -- Индексы сохранённых таблиц
