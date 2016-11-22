@@ -10,7 +10,7 @@ $(document).ready(function(e) {
 		}
 		$(document).find('.cub').addClass('NotTurn');
 		var TurnCurrent = localStorage.getItem('turn');
-		console.log(TurnCurrent);
+		
 		$('.play'+TurnCurrent).removeClass('NotTurn');
 	} else {
 		$(document).find('#part1').append('<div class="player" id="player1"><img src="/Imagedata/playerdata/1.png" alt=""></div>').addClass('playcolor1');
