@@ -119,6 +119,7 @@ $(document).keyup(function(e) {
 
 $(window).on('beforeunload ',function() {
 		var i;
+		
 		var data = "";
 		for (i = 1; i < 5; i++) {
 			var data = $('#player'+i).parent().attr('data-place')+"!"+$('.play'+i+' .money span').text()+"!"+$('.play'+i+' .luck span').text();	
